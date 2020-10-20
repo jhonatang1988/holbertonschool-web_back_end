@@ -19,6 +19,12 @@ from typing import Tuple, List
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """
+    correct code to comply with mypy
+    :param lst: Tuple of any
+    :param factor: int
+    :return: list of any
+    """
     zoomed_in: List = [
         item for item in lst
         for i in range(factor)
