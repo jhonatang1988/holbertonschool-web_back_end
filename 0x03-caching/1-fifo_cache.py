@@ -15,7 +15,7 @@ class FIFOCache(BaseCaching):
         """
         call parents
         """
-        BaseCaching.__init__(self)
+        super().__init__()
         self.order = []
 
     def put(self, key, item):
