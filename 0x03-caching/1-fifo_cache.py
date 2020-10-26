@@ -15,7 +15,7 @@ class FIFOCache(BaseCaching):
         """
         call parents
         """
-        super().__init__()
+        BaseCaching.__init__()
         self.order = []
 
     def put(self, key, item):
@@ -25,8 +25,9 @@ class FIFOCache(BaseCaching):
         :param item: value
         :return: None
         """
-        if key or item is not None:
-
+        if key is None or item is None:
+            pass
+        else:
             self.cache_data[key] = item
 
             if key in self.order:
@@ -36,7 +37,7 @@ class FIFOCache(BaseCaching):
             if len(self.order) > BaseCaching.MAX_ITEMS:
                 last = self.order.pop(0)
                 self.cache_data.pop(last)
-                print(f'DISCARD: {last}')
+                print('DISCARD: {}'.format(last))
 
     def get(self, key):
         """
