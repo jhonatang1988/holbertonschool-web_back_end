@@ -18,29 +18,6 @@ class FIFOCache(BaseCaching):
         super().__init__()
         self.order = []
 
-    # def put(self, key, item):
-    #     """
-    #     put a value in cache
-    #     :param key: key
-    #     :param item: value
-    #     :return: None
-    #     """
-    #     if key is None or item is None:
-    #         pass
-    #     else:
-    #         self.cache_data[key] = item
-    #
-    #         if key in self.order:
-    #             self.order.remove(key)
-    #         self.order.append(key)
-    #
-    #         if len(self.order) > BaseCaching.MAX_ITEMS:
-    #             last = self.order.pop(0)
-    #             self.cache_data.pop(last)
-    #             print(f'DISCARD: {last}')
-    #             # self.cache_data.pop()
-    #             # print(f'DISCARD:')
-
     def put(self, key, item):
         """
             modify cache data
@@ -49,15 +26,19 @@ class FIFOCache(BaseCaching):
                 key: of the dict
                 item: value of the key
         """
-        if key or item is not None:
-            valuecache = self.get(key)
-            if valuecache is None:
-                if len(self.cache_data) >= BaseCaching.MAX_ITEMS:
-                    keydel = list(self.cache_data.keys())[0]
-                    del self.cache_data[keydel]
-                    print("DISCARD: {}".format(keydel))
-
+        if key is None or item is None:
+            pass
+        else:
             self.cache_data[key] = item
+
+            if key in self.order:
+                self.order.remove(key)
+            self.order.append(key)
+
+            if len(self.order) > BaseCaching.MAX_ITEMS:
+                last = self.order.pop(0)
+                self.cache_data.pop(last)
+                print(f'DISCARD: {last}')
 
     def get(self, key):
         """
