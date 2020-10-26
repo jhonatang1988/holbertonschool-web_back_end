@@ -34,7 +34,7 @@ class FIFOCache(BaseCaching):
                 self.order.remove(key)
             self.order.append(key)
 
-            if len(self.order) > super().MAX_ITEMS:
+            if len(self.order) > BaseCaching.MAX_ITEMS:
                 last = self.order.pop(0)
                 self.cache_data.pop(last)
                 print(f'DISCARD: {last}')
