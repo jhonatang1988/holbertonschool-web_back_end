@@ -16,7 +16,7 @@ class FIFOCache(BaseCaching):
         call parents
         """
         super().__init__()
-        self.order = []
+        # self.order = []
 
     def put(self, key, item):
         """
@@ -30,16 +30,16 @@ class FIFOCache(BaseCaching):
         else:
             self.cache_data[key] = item
 
-            if key in self.order:
-                self.order.remove(key)
-            self.order.append(key)
+            # if key in self.order:
+            #     self.order.remove(key)
+            # self.order.append(key)
 
             if len(self.order) > BaseCaching.MAX_ITEMS:
-                last = self.order.pop(0)
-                self.cache_data.pop(last)
-                print(f'DISCARD: {last}')
-                # self.cache_data.pop()
-                # print(f'DISCARD:')
+                # last = self.order.pop(0)
+                # self.cache_data.pop(last)
+                # print(f'DISCARD: {last}')
+                self.cache_data.pop()
+                print(f'DISCARD:')
 
     def get(self, key):
         """
