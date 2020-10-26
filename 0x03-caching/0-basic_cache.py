@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-basic dictionary
+basic dictionary exercise
 """
 from typing import Any
 
