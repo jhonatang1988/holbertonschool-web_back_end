@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-FIFO caching
+FIFO caching exercise
 """
 
 BaseCaching = __import__('base_caching').BaseCaching
