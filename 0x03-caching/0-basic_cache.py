@@ -13,6 +13,9 @@ class BasicCache(BaseCaching):
     """
 
     def __init__(self):
+        """
+        init method
+        """
         BaseCaching.__init__(self)
 
     def put(self, key: str, item: Any):
