@@ -2,8 +2,8 @@
 """
 basic dictionary exercise
 """
-from typing import Any
-from base_caching import BaseCaching
+
+BaseCaching = __import__('base_caching').BaseCaching
 
 
 class BasicCache(BaseCaching):
@@ -17,7 +17,7 @@ class BasicCache(BaseCaching):
         """
         BaseCaching.__init__(self)
 
-    def put(self, key: str, item: Any):
+    def put(self, key, item):
         """
         add to the dict cache
         :param key: key
