@@ -20,15 +20,13 @@ class FIFOCache(BaseCaching):
 
     def put(self, key, item):
         """
-            modify cache data
-
-            Args:
-                key: of the dict
-                item: value of the key
+        put a value in cache
+        :param key: key
+        :param item: value
+        :return: None
         """
-        if key is None or item is None:
-            pass
-        else:
+        if key or item is not None:
+
             self.cache_data[key] = item
 
             if key in self.order:
