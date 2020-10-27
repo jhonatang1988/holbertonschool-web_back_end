@@ -25,15 +25,9 @@ class LFUCache(BaseCaching):
         :return: None
         """
         for k, v in sorted(self.count.items(), key=lambda p: p[1]):
-            # print(k, v)
             if v > 0:
-                # print(self.order)
-                # print(self.count)
-                # print(f'entro {k, v}')
                 self.order.remove(k)
-                # print(self.order)
                 self.order.append(k)
-                # print(self.order)
 
     def put(self, key, item):
         """
@@ -73,13 +67,9 @@ class LFUCache(BaseCaching):
         """
         if key in self.cache_data:
             self.count[key] += 1
-            # print(self.count)
-            # print(self.order)
 
             self.organize_from_counter()
 
-            # print(self.count)
-            # print(self.order)
             return self.cache_data[key]
 
         else:
