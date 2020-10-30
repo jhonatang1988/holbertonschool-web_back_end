@@ -1,0 +1,312 @@
+2020-10-30 13:47:27,220:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 13:47:27,221:filtered_logger:['name', 'egg']
+2020-10-30 13:47:27,221:filtered_logger:['email', 'eggmin@eggsample.com']
+2020-10-30 13:47:27,221:filtered_logger:['password', 'eggcellent']
+2020-10-30 13:47:27,221:filtered_logger:['date_of_birth', '12/12/1986']
+2020-10-30 13:47:27,221:filtered_logger:['']
+2020-10-30 13:47:27,221:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 13:47:27,221:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 13:47:27,221:filtered_logger:['name', 'bob']
+2020-10-30 13:47:27,221:filtered_logger:['name', 'bob']
+2020-10-30 13:47:27,221:filtered_logger:['email', 'bob@dylan.com']
+2020-10-30 13:47:27,221:filtered_logger:['email', 'bob@dylan.com']
+2020-10-30 13:47:27,222:filtered_logger:['password', 'bobbycool']
+2020-10-30 13:47:27,222:filtered_logger:['password', 'bobbycool']
+2020-10-30 13:47:27,222:filtered_logger:['date_of_birth', '03/04/1993']
+2020-10-30 13:47:27,222:filtered_logger:['date_of_birth', '03/04/1993']
+2020-10-30 13:47:27,222:filtered_logger:['']
+2020-10-30 13:47:27,222:filtered_logger:['']
+2020-10-30 13:47:44,247:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 13:47:44,247:filtered_logger:name
+2020-10-30 13:47:44,247:filtered_logger:email
+2020-10-30 13:47:44,247:filtered_logger:password
+2020-10-30 13:47:44,247:filtered_logger:date_of_birth
+2020-10-30 13:49:20,718:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 13:49:20,718:filtered_logger:name
+2020-10-30 13:49:20,718:filtered_logger:email
+2020-10-30 13:49:20,719:filtered_logger:password
+2020-10-30 13:49:20,719:filtered_logger:date_of_birth
+2020-10-30 13:49:20,719:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 13:49:20,719:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 13:49:20,719:filtered_logger:name
+2020-10-30 13:49:20,719:filtered_logger:name
+2020-10-30 13:49:20,719:filtered_logger:email
+2020-10-30 13:49:20,719:filtered_logger:email
+2020-10-30 13:49:20,719:filtered_logger:password
+2020-10-30 13:49:20,719:filtered_logger:password
+2020-10-30 13:49:20,719:filtered_logger:date_of_birth
+2020-10-30 13:49:20,719:filtered_logger:date_of_birth
+2020-10-30 13:49:35,877:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 13:49:35,878:filtered_logger:name
+2020-10-30 13:49:35,878:filtered_logger:egg
+2020-10-30 13:49:35,878:filtered_logger:email
+2020-10-30 13:49:35,878:filtered_logger:eggmin@eggsample.com
+2020-10-30 13:49:35,878:filtered_logger:password
+2020-10-30 13:49:35,878:filtered_logger:eggcellent
+2020-10-30 13:49:35,878:filtered_logger:date_of_birth
+2020-10-30 13:49:35,878:filtered_logger:12/12/1986
+2020-10-30 13:49:35,879:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 13:49:35,879:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 13:49:35,879:filtered_logger:name
+2020-10-30 13:49:35,879:filtered_logger:name
+2020-10-30 13:49:35,879:filtered_logger:bob
+2020-10-30 13:49:35,879:filtered_logger:bob
+2020-10-30 13:49:35,879:filtered_logger:email
+2020-10-30 13:49:35,879:filtered_logger:email
+2020-10-30 13:49:35,879:filtered_logger:bob@dylan.com
+2020-10-30 13:49:35,879:filtered_logger:bob@dylan.com
+2020-10-30 13:49:35,879:filtered_logger:password
+2020-10-30 13:49:35,879:filtered_logger:password
+2020-10-30 13:49:35,880:filtered_logger:bobbycool
+2020-10-30 13:49:35,880:filtered_logger:bobbycool
+2020-10-30 13:49:35,880:filtered_logger:date_of_birth
+2020-10-30 13:49:35,880:filtered_logger:date_of_birth
+2020-10-30 13:49:35,880:filtered_logger:03/04/1993
+2020-10-30 13:49:35,880:filtered_logger:03/04/1993
+2020-10-30 13:52:32,398:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 13:52:32,398:filtered_logger:name
+2020-10-30 13:52:32,398:filtered_logger:egg
+2020-10-30 13:52:32,399:filtered_logger:egg
+2020-10-30 13:52:32,399:filtered_logger:email
+2020-10-30 13:52:32,399:filtered_logger:eggmin@eggsample.com
+2020-10-30 13:52:32,399:filtered_logger:eggmin@eggsample.com
+2020-10-30 13:52:32,399:filtered_logger:password
+2020-10-30 13:52:32,399:filtered_logger:eggcellent
+2020-10-30 13:52:32,399:filtered_logger:eggcellent
+2020-10-30 13:52:32,399:filtered_logger:date_of_birth
+2020-10-30 13:52:32,399:filtered_logger:12/12/1986
+2020-10-30 13:52:32,399:filtered_logger:12/12/1986
+2020-10-30 13:52:32,400:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 13:52:32,400:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 13:52:32,400:filtered_logger:name
+2020-10-30 13:52:32,400:filtered_logger:name
+2020-10-30 13:52:32,400:filtered_logger:bob
+2020-10-30 13:52:32,400:filtered_logger:bob
+2020-10-30 13:52:32,400:filtered_logger:bob
+2020-10-30 13:52:32,400:filtered_logger:bob
+2020-10-30 13:52:32,400:filtered_logger:email
+2020-10-30 13:52:32,400:filtered_logger:email
+2020-10-30 13:52:32,400:filtered_logger:bob@dylan.com
+2020-10-30 13:52:32,400:filtered_logger:bob@dylan.com
+2020-10-30 13:52:32,400:filtered_logger:bob@dylan.com
+2020-10-30 13:52:32,400:filtered_logger:bob@dylan.com
+2020-10-30 13:52:32,400:filtered_logger:password
+2020-10-30 13:52:32,400:filtered_logger:password
+2020-10-30 13:52:32,400:filtered_logger:bobbycool
+2020-10-30 13:52:32,400:filtered_logger:bobbycool
+2020-10-30 13:52:32,401:filtered_logger:bobbycool
+2020-10-30 13:52:32,401:filtered_logger:bobbycool
+2020-10-30 13:52:32,401:filtered_logger:date_of_birth
+2020-10-30 13:52:32,401:filtered_logger:date_of_birth
+2020-10-30 13:52:32,401:filtered_logger:03/04/1993
+2020-10-30 13:52:32,401:filtered_logger:03/04/1993
+2020-10-30 13:52:32,401:filtered_logger:03/04/1993
+2020-10-30 13:52:32,401:filtered_logger:03/04/1993
+2020-10-30 13:52:39,323:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 13:52:39,323:filtered_logger:name
+2020-10-30 13:52:39,323:filtered_logger:egg
+2020-10-30 13:52:39,323:filtered_logger:egg
+2020-10-30 13:52:39,323:filtered_logger:email
+2020-10-30 13:52:39,323:filtered_logger:eggmin@eggsample.com
+2020-10-30 13:52:39,323:filtered_logger:eggmin@eggsample.com
+2020-10-30 13:52:39,323:filtered_logger:password
+2020-10-30 13:52:39,323:filtered_logger:eggcellent
+2020-10-30 13:52:39,324:filtered_logger:eggcellent
+2020-10-30 13:52:39,324:filtered_logger:date_of_birth
+2020-10-30 13:52:39,324:filtered_logger:12/12/1986
+2020-10-30 13:52:39,324:filtered_logger:12/12/1986
+2020-10-30 13:52:39,324:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 13:52:39,324:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 13:52:39,324:filtered_logger:name
+2020-10-30 13:52:39,324:filtered_logger:name
+2020-10-30 13:52:39,324:filtered_logger:bob
+2020-10-30 13:52:39,324:filtered_logger:bob
+2020-10-30 13:52:39,324:filtered_logger:bob
+2020-10-30 13:52:39,324:filtered_logger:bob
+2020-10-30 13:52:39,324:filtered_logger:email
+2020-10-30 13:52:39,324:filtered_logger:email
+2020-10-30 13:52:39,325:filtered_logger:bob@dylan.com
+2020-10-30 13:52:39,325:filtered_logger:bob@dylan.com
+2020-10-30 13:52:39,325:filtered_logger:bob@dylan.com
+2020-10-30 13:52:39,325:filtered_logger:bob@dylan.com
+2020-10-30 13:52:39,325:filtered_logger:password
+2020-10-30 13:52:39,325:filtered_logger:password
+2020-10-30 13:52:39,325:filtered_logger:bobbycool
+2020-10-30 13:52:39,325:filtered_logger:bobbycool
+2020-10-30 13:52:39,325:filtered_logger:bobbycool
+2020-10-30 13:52:39,325:filtered_logger:bobbycool
+2020-10-30 13:52:39,325:filtered_logger:date_of_birth
+2020-10-30 13:52:39,325:filtered_logger:date_of_birth
+2020-10-30 13:52:39,325:filtered_logger:03/04/1993
+2020-10-30 13:52:39,325:filtered_logger:03/04/1993
+2020-10-30 13:52:39,325:filtered_logger:03/04/1993
+2020-10-30 13:52:39,325:filtered_logger:03/04/1993
+2020-10-30 14:00:27,761:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 14:00:27,762:filtered_logger:name
+2020-10-30 14:00:27,762:filtered_logger:egg
+2020-10-30 14:00:27,762:filtered_logger:xxxxxx
+2020-10-30 14:00:27,762:filtered_logger:email
+2020-10-30 14:00:27,763:filtered_logger:eggmin@eggsample.com
+2020-10-30 14:00:27,763:filtered_logger:xxxxxx
+2020-10-30 14:00:27,763:filtered_logger:password
+2020-10-30 14:00:27,763:filtered_logger:eggcellent
+2020-10-30 14:00:27,763:filtered_logger:xxxxxx
+2020-10-30 14:00:27,763:filtered_logger:date_of_birth
+2020-10-30 14:00:27,763:filtered_logger:12/12/1986
+2020-10-30 14:00:27,763:filtered_logger:xxxxxx
+2020-10-30 14:00:27,763:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:00:27,763:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:00:27,764:filtered_logger:name
+2020-10-30 14:00:27,764:filtered_logger:name
+2020-10-30 14:00:27,764:filtered_logger:bob
+2020-10-30 14:00:27,764:filtered_logger:bob
+2020-10-30 14:00:27,764:filtered_logger:xxxxxx
+2020-10-30 14:00:27,764:filtered_logger:xxxxxx
+2020-10-30 14:00:27,764:filtered_logger:email
+2020-10-30 14:00:27,764:filtered_logger:email
+2020-10-30 14:00:27,764:filtered_logger:bob@dylan.com
+2020-10-30 14:00:27,764:filtered_logger:bob@dylan.com
+2020-10-30 14:00:27,764:filtered_logger:xxxxxx
+2020-10-30 14:00:27,764:filtered_logger:xxxxxx
+2020-10-30 14:00:27,764:filtered_logger:password
+2020-10-30 14:00:27,764:filtered_logger:password
+2020-10-30 14:00:27,765:filtered_logger:bobbycool
+2020-10-30 14:00:27,765:filtered_logger:bobbycool
+2020-10-30 14:00:27,765:filtered_logger:xxxxxx
+2020-10-30 14:00:27,765:filtered_logger:xxxxxx
+2020-10-30 14:00:27,765:filtered_logger:date_of_birth
+2020-10-30 14:00:27,765:filtered_logger:date_of_birth
+2020-10-30 14:00:27,765:filtered_logger:03/04/1993
+2020-10-30 14:00:27,765:filtered_logger:03/04/1993
+2020-10-30 14:00:27,765:filtered_logger:xxxxxx
+2020-10-30 14:00:27,765:filtered_logger:xxxxxx
+2020-10-30 14:01:03,577:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 14:01:03,578:filtered_logger:name
+2020-10-30 14:01:03,578:filtered_logger:egg
+2020-10-30 14:01:03,578:filtered_logger:xx
+2020-10-30 14:01:03,578:filtered_logger:email
+2020-10-30 14:01:03,578:filtered_logger:eggmin@eggsample.com
+2020-10-30 14:01:03,578:filtered_logger:xx
+2020-10-30 14:01:03,578:filtered_logger:password
+2020-10-30 14:01:03,578:filtered_logger:eggcellent
+2020-10-30 14:01:03,579:filtered_logger:xx
+2020-10-30 14:01:03,579:filtered_logger:date_of_birth
+2020-10-30 14:01:03,579:filtered_logger:12/12/1986
+2020-10-30 14:01:03,579:filtered_logger:xx
+2020-10-30 14:01:03,579:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:01:03,579:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:01:03,579:filtered_logger:name
+2020-10-30 14:01:03,579:filtered_logger:name
+2020-10-30 14:01:03,579:filtered_logger:bob
+2020-10-30 14:01:03,579:filtered_logger:bob
+2020-10-30 14:01:03,579:filtered_logger:xx
+2020-10-30 14:01:03,579:filtered_logger:xx
+2020-10-30 14:01:03,579:filtered_logger:email
+2020-10-30 14:01:03,579:filtered_logger:email
+2020-10-30 14:01:03,580:filtered_logger:bob@dylan.com
+2020-10-30 14:01:03,580:filtered_logger:bob@dylan.com
+2020-10-30 14:01:03,580:filtered_logger:xx
+2020-10-30 14:01:03,580:filtered_logger:xx
+2020-10-30 14:01:03,580:filtered_logger:password
+2020-10-30 14:01:03,580:filtered_logger:password
+2020-10-30 14:01:03,580:filtered_logger:bobbycool
+2020-10-30 14:01:03,580:filtered_logger:bobbycool
+2020-10-30 14:01:03,580:filtered_logger:xx
+2020-10-30 14:01:03,580:filtered_logger:xx
+2020-10-30 14:01:03,580:filtered_logger:date_of_birth
+2020-10-30 14:01:03,580:filtered_logger:date_of_birth
+2020-10-30 14:01:03,580:filtered_logger:03/04/1993
+2020-10-30 14:01:03,580:filtered_logger:03/04/1993
+2020-10-30 14:01:03,580:filtered_logger:xx
+2020-10-30 14:01:03,580:filtered_logger:xx
+2020-10-30 14:01:25,119:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 14:01:25,120:filtered_logger:name
+2020-10-30 14:01:25,120:filtered_logger:egg
+2020-10-30 14:03:34,110:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 14:03:34,111:filtered_logger:name
+2020-10-30 14:03:34,111:filtered_logger:egg
+2020-10-30 14:03:34,112:filtered_logger:xxxxxx
+2020-10-30 14:03:34,112:filtered_logger:email
+2020-10-30 14:03:34,112:filtered_logger:eggmin@eggsample.com
+2020-10-30 14:03:34,112:filtered_logger:xxxxxx
+2020-10-30 14:03:34,112:filtered_logger:password
+2020-10-30 14:03:34,112:filtered_logger:eggcellent
+2020-10-30 14:03:34,112:filtered_logger:xxxxxx
+2020-10-30 14:03:34,112:filtered_logger:date_of_birth
+2020-10-30 14:03:34,113:filtered_logger:12/12/1986
+2020-10-30 14:03:34,113:filtered_logger:xxxxxx
+2020-10-30 14:03:34,113:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:03:34,113:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:03:34,113:filtered_logger:name
+2020-10-30 14:03:34,113:filtered_logger:name
+2020-10-30 14:03:34,113:filtered_logger:bob
+2020-10-30 14:03:34,113:filtered_logger:bob
+2020-10-30 14:03:34,113:filtered_logger:xxxxxx
+2020-10-30 14:03:34,113:filtered_logger:xxxxxx
+2020-10-30 14:03:34,114:filtered_logger:email
+2020-10-30 14:03:34,114:filtered_logger:email
+2020-10-30 14:03:34,114:filtered_logger:bob@dylan.com
+2020-10-30 14:03:34,114:filtered_logger:bob@dylan.com
+2020-10-30 14:03:34,114:filtered_logger:xxxxxx
+2020-10-30 14:03:34,114:filtered_logger:xxxxxx
+2020-10-30 14:03:34,114:filtered_logger:password
+2020-10-30 14:03:34,114:filtered_logger:password
+2020-10-30 14:03:34,114:filtered_logger:bobbycool
+2020-10-30 14:03:34,114:filtered_logger:bobbycool
+2020-10-30 14:03:34,114:filtered_logger:xxxxxx
+2020-10-30 14:03:34,114:filtered_logger:xxxxxx
+2020-10-30 14:03:34,114:filtered_logger:date_of_birth
+2020-10-30 14:03:34,114:filtered_logger:date_of_birth
+2020-10-30 14:03:34,114:filtered_logger:03/04/1993
+2020-10-30 14:03:34,114:filtered_logger:03/04/1993
+2020-10-30 14:03:34,115:filtered_logger:xxxxxx
+2020-10-30 14:03:34,115:filtered_logger:xxxxxx
+2020-10-30 14:04:54,925:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 14:05:33,119:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 14:05:33,119:filtered_logger:password
+2020-10-30 14:05:33,119:filtered_logger:eggcellent
+2020-10-30 14:05:33,119:filtered_logger:xxxxxx
+2020-10-30 14:05:33,119:filtered_logger:date_of_birth
+2020-10-30 14:05:33,119:filtered_logger:12/12/1986
+2020-10-30 14:05:33,119:filtered_logger:xxxxxx
+2020-10-30 14:05:33,120:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:05:33,120:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:05:33,120:filtered_logger:password
+2020-10-30 14:05:33,120:filtered_logger:password
+2020-10-30 14:05:33,120:filtered_logger:bobbycool
+2020-10-30 14:05:33,120:filtered_logger:bobbycool
+2020-10-30 14:05:33,120:filtered_logger:xxxxxx
+2020-10-30 14:05:33,120:filtered_logger:xxxxxx
+2020-10-30 14:05:33,120:filtered_logger:date_of_birth
+2020-10-30 14:05:33,120:filtered_logger:date_of_birth
+2020-10-30 14:05:33,120:filtered_logger:03/04/1993
+2020-10-30 14:05:33,120:filtered_logger:03/04/1993
+2020-10-30 14:05:33,120:filtered_logger:xxxxxx
+2020-10-30 14:05:33,120:filtered_logger:xxxxxx
+2020-10-30 14:05:39,969:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 14:05:39,970:filtered_logger:password
+2020-10-30 14:05:39,970:filtered_logger:eggcellent
+2020-10-30 14:05:39,970:filtered_logger:xxxxxx
+2020-10-30 14:05:39,970:filtered_logger:date_of_birth
+2020-10-30 14:05:39,970:filtered_logger:12/12/1986
+2020-10-30 14:05:39,971:filtered_logger:xxxxxx
+2020-10-30 14:05:39,971:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:05:39,971:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:05:39,971:filtered_logger:password
+2020-10-30 14:05:39,971:filtered_logger:password
+2020-10-30 14:05:39,971:filtered_logger:bobbycool
+2020-10-30 14:05:39,971:filtered_logger:bobbycool
+2020-10-30 14:05:39,972:filtered_logger:xxxxxx
+2020-10-30 14:05:39,972:filtered_logger:xxxxxx
+2020-10-30 14:05:39,972:filtered_logger:date_of_birth
+2020-10-30 14:05:39,972:filtered_logger:date_of_birth
+2020-10-30 14:05:39,972:filtered_logger:03/04/1993
+2020-10-30 14:05:39,972:filtered_logger:03/04/1993
+2020-10-30 14:05:39,972:filtered_logger:xxxxxx
+2020-10-30 14:05:39,972:filtered_logger:xxxxxx
+2020-10-30 14:08:15,167:filtered_logger:['name=egg', 'email=eggmin@eggsample.com', 'password=eggcellent', 'date_of_birth=12/12/1986', '']
+2020-10-30 14:08:15,168:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:08:15,168:filtered_logger:['name=bob', 'email=bob@dylan.com', 'password=bobbycool', 'date_of_birth=03/04/1993', '']
+2020-10-30 14:20:02,614:filtered_logger:name=egg;email=eggmin@eggsample.com;password=xxx;date_of_birth=xxx;
+2020-10-30 14:20:02,615:filtered_logger:name=bob;email=bob@dylan.com;password=xxx;date_of_birth=xxx;
+2020-10-30 14:20:02,615:filtered_logger:name=bob;email=bob@dylan.com;password=xxx;date_of_birth=xxx;
