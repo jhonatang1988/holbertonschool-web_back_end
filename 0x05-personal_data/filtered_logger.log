@@ -310,3 +310,21 @@
 2020-10-30 14:20:02,614:filtered_logger:name=egg;email=eggmin@eggsample.com;password=xxx;date_of_birth=xxx;
 2020-10-30 14:20:02,615:filtered_logger:name=bob;email=bob@dylan.com;password=xxx;date_of_birth=xxx;
 2020-10-30 14:20:02,615:filtered_logger:name=bob;email=bob@dylan.com;password=xxx;date_of_birth=xxx;
+2020-10-30 14:21:46,138:filtered_logger:name=egg;email=eggmin@eggsample.com;password=xxx;date_of_birth=xxx;
+2020-10-30 14:21:46,139:filtered_logger:name=bob;email=bob@dylan.com;password=xxx;date_of_birth=xxx;
+2020-10-30 14:21:46,139:filtered_logger:name=bob;email=bob@dylan.com;password=xxx;date_of_birth=xxx;
+2020-10-30 14:52:54,095:filtered_logger:name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 14:56:55,497: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 14:57:09,574: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 14:58:38,618: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 14:59:58,712: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 15:00:23,322: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 15:02:30,770: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 15:03:23,667: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 15:03:46,541: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 15:03:49,524: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] %(name)s %(levelname)s %(asctime)-15s: %(message)s
+[HOLBERTON] filtered_logger INFO 2020-10-30 15:05:05,981: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 15:06:58,370: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 15:09:06,955: name=Bob;email=***;ssn=***;password=***;
+[HOLBERTON] filtered_logger INFO 2020-10-30 15:17:05,962: name=Bob;email=***;ssn=***;password=***;

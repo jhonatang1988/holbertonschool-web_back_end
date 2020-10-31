@@ -6,21 +6,10 @@ obfuscated text
 import re
 import logging
 from typing import List
+import mysql.connector
+import os
 
-
-def logger():
-    """
-    setup logger
-    :return: logger instance
-    """
-    a_logger = logging.getLogger(__name__)
-    a_logger.setLevel(logging.INFO)
-    formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
-    file_handler = logging.FileHandler('filtered_logger.log')
-    file_handler.setFormatter(formatter)
-
-    a_logger.addHandler(file_handler)
-    return a_logger
+PII_FIELDS: List[str] = ['name', 'email', 'phone', 'ssn', 'ip']
 
 
 def filter_datum(fields: List[str], redaction: str, message: str,
@@ -34,16 +23,72 @@ def filter_datum(fields: List[str], redaction: str, message: str,
     separating all fields in the log line
     :return: obfuscated text
     """
-    a_log = logger()
-    # spl_msg = message.split(separator)
-
     # GOT "name=egg;email=eggmin@eggsample.com;password=eggcellent;
     # date_of_birth=12/12/1986;"
 
     # EXP name=egg;email=eggmin@eggsample.com;password=xxx;date_of_birth=xxx;
-
     for field in fields:
         message = re.sub(rf'(?<={field}=).*?(?={separator})', redaction,
                          message)
-    a_log.info(message)
     return message
+
+
+def get_logger() -> logging.Logger:
+    """
+    creates the logger object
+    :return: loggin.logger object
+    """
+    user_data_logger = logging.getLogger('user_data')
+    user_data_logger.setLevel(logging.INFO)
+    stream_handler = logging.StreamHandler()
+    formatter = RedactingFormatter(fields=PII_FIELDS)
+    stream_handler.setFormatter(formatter)
+    user_data_logger.addHandler(stream_handler)
+
+    return user_data_logger
+
+
+def get_db() -> mysql.connector.connection.MySQLConnection:
+    """
+    setup the mysql connector
+
+    :return:
+    """
+
+    db_connection = mysql.connector.Connect(
+        host=os.getenv('PERSONAL_DATA_DB_HOST'),
+        user=os.getenv('PERSONAL_DATA_DB_USERNAME'),
+        password=os.getenv('PERSONAL_DATA_DB_PASSWORD'),
+        database=os.getenv('PERSONAL_DATA_DB_NAME')
+    )
+    return db_connection
+
+
+class RedactingFormatter(logging.Formatter):
+    """
+    Redacting Formatter class
+    """
+
+    REDACTION = "***"
+    FORMAT = "[HOLBERTON] %(name)s %(levelname)s %(asctime)-15s: %(message)s"
+    SEPARATOR = ";"
+
+    def __init__(self, fields: List[str]):
+        """
+        init
+        :param fields: list of fields to obfuscate
+        """
+        super(RedactingFormatter, self).__init__(self.FORMAT)
+        self.fields = fields
+
+    def format(self, record: logging.LogRecord) -> str:
+        """
+        giving format to the record
+        :param record: the record instance
+        :return: formatted record message
+        """
+
+        obfuscated = filter_datum(self.fields, self.REDACTION, record.msg,
+                                  self.SEPARATOR)
+        record.msg = obfuscated
+        return super(RedactingFormatter, self).format(record)
