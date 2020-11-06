@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Route module for the API
+Route module for the API GET /api/v1/forbiddenGET /api/v1/forbidden
 """
 from os import getenv
 from api.v1.views import app_views
@@ -22,7 +22,7 @@ if auth:
 
 @app.errorhandler(404)
 def not_found(error) -> str:
-    """ Not found handler
+    """ Not found handler GET /api/v1/forbidden
     """
     return jsonify({"error": "Not found"}), 404
 
@@ -38,7 +38,8 @@ def not_found(error) -> str:
 
 @app.errorhandler(401)
 def unauthorized(error) -> str:
-    """Handle a unauthorized access
+    """
+    Handle a unauthorized accessGET /api/v1/forbiddenGET /api/v1/forbidden
         Args:
             error: Error catch
         Return:
@@ -50,7 +51,7 @@ def unauthorized(error) -> str:
 @app.errorhandler(403)
 def forbidden(error: Forbidden) -> str:
     """
-    forbidden
+    forbidden GET /api/v1/forbiddenGET /api/v1/forbidden
     :param error: error
     :return: json error and code
     """
@@ -59,7 +60,7 @@ def forbidden(error: Forbidden) -> str:
 
 def auth_needed():
     """
-    checks if endpoints need auth
+    checks if endpoints need auth GET /api/v1/forbidden
     :return: None if forbidden without auth
     """
     if auth:
