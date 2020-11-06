@@ -27,16 +27,22 @@ def not_found(error) -> str:
     return jsonify({"error": "Not found"}), 404
 
 
-@app.errorhandler(401)
-def unauthorized(error: Unauthorized) -> str:
+# @app.errorhandler(401)
+# def unauthorized(error: Unauthorized) -> str:
+#     """
+#     unauthorized
+#     :param error: error
+#     :return: json error and code
+#     """
+#     return jsonify({"error": "Unauthorized"}), 401
+
+@app_views.route('/unauthorized', methods=['GET'], strict_slashes=False)
+def test_unathourized() -> str:
+    """ GET /api/v1/unauthorized
+    Return:
+      - Raise error
     """
-    unauthorized
-    :param error: error
-    :return: json error and code
-    """
-    return jsonify(
-        {"error": "Unauthorized"}
-    ), 401
+    return abort(401)
 
 
 @app.errorhandler(403)
