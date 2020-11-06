@@ -5,11 +5,11 @@ obfuscated text
 
 import re
 import logging
-from typing import List
+from typing import List, ByteString
 import mysql.connector
 import os
 
-PII_FIELDS: List[str] = ['name', 'email', 'phone', 'ssn', 'ip']
+PII_FIELDS: List[str] = ['name', 'email', 'phone', 'ssn', 'password']
 
 
 def filter_datum(fields: List[str], redaction: str, message: str,
@@ -92,3 +92,27 @@ class RedactingFormatter(logging.Formatter):
                                   self.SEPARATOR)
         record.msg = obfuscated
         return super(RedactingFormatter, self).format(record)
+
+
+def main() -> None:
+    db = get_db()
+    cursor = db.cursor(dictionary=True)
+
+    cursor.execute('SELECT * FROM users')
+
+    # get users
+    users = cursor.fetchall()
+
+    logger = get_logger()
+
+    for user in users:
+        msg = ''
+        for key, value in user.items():
+            msg += f'{key}={value};'
+        logger.info(msg)
+
+
+if __name__ == '__main__':
+    main()
+
+# PERSONAL_DATA_DB_USERNAME=root PERSONAL_DATA_DB_PASSWORD=Java_1988 PERSONAL_DATA_DB_HOST=localhost PERSONAL_DATA_DB_NAME=my_db ./filtered_logger.py
