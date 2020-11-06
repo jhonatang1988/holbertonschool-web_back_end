@@ -29,15 +29,31 @@ def not_found(error) -> str:
 
 @app.errorhandler(401)
 def unauthorized(error: Unauthorized) -> str:
-    return jsonify({"error": "Unauthorized"}), 401
+    """
+    unauthorized
+    :param error: error
+    :return: json error and code
+    """
+    return jsonify(
+        {"error": "Unauthorized"}
+    ), 401
 
 
 @app.errorhandler(403)
 def forbidden(error: Forbidden) -> str:
+    """
+    forbidden
+    :param error: error
+    :return: json error and code
+    """
     return jsonify({"error": "Forbidden"}), 403
 
 
 def auth_needed():
+    """
+    checks if endpoints need auth
+    :return: None if forbidden without auth
+    """
     if auth:
         excluded_paths = ['/api/v1/status/', '/api/v1/unauthorized/',
                           '/api/v1/forbidden/']
