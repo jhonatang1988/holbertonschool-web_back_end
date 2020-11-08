@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-""" Module of Index views GET /api/v1/forbiddenGET /api/v1/forbidden
+"""
+Module of Index views GET /api/v1/forbiddenGET /api/v1/forbidden
 """
 from flask import jsonify, abort
 from api.v1.views import app_views
