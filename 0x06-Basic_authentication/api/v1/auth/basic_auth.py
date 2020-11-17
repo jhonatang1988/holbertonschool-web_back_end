@@ -87,3 +87,34 @@ class BasicAuth(Auth):
                         return user
 
         return None
+
+    def current_user(self, request=None) -> TypeVar('User'):
+        """
+        retrieves the User instance for a request
+        :param request: the request
+        :return:
+        """
+
+        if request:
+            auth_credentials = self.authorization_header(request)
+
+        if auth_credentials:
+            encoded_str = self.extract_base64_authorization_header(
+                auth_credentials)
+
+        if encoded_str:
+            decoded_str = self.decode_base64_authorization_header(encoded_str)
+
+        if decoded_str:
+            user_credentials = self.extract_user_credentials(decoded_str)
+
+        if not any(map(lambda x: x is None, user_credentials)):
+            user = self.user_object_from_credentials(
+                user_email=user_credentials[0],
+                user_pwd=user_credentials[1]
+            )
+
+        if user:
+            return user
+
+        return None
