@@ -10,7 +10,6 @@ from flask_cors import (CORS, cross_origin)
 from api.v1.auth.auth import Auth
 
 import os
-from werkzeug.exceptions import Unauthorized, Forbidden
 
 app = Flask(__name__)
 app.register_blueprint(app_views)
@@ -27,17 +26,8 @@ def not_found(error) -> str:
     return jsonify({"error": "Not found"}), 404
 
 
-# @app.errorhandler(401)
-# def unauthorized(error: Unauthorized) -> str:
-#     """
-#     unauthorized
-#     :param error: error
-#     :return: json error and code
-#     """
-#     return jsonify({"error": "Unauthorized"}), 401
-
 @app.errorhandler(401)
-def unauthorized(error: Unauthorized) -> str:
+def unauthorized(error) -> str:
     """
     Handle a unauthorized accessGET /api/v1/forbiddenGET /api/v1/forbidden
         Args:
@@ -49,7 +39,7 @@ def unauthorized(error: Unauthorized) -> str:
 
 
 @app.errorhandler(403)
-def forbidden(error: Forbidden) -> str:
+def forbidden(error) -> str:
     """
     forbidden GET /api/v1/forbiddenGET /api/v1/forbidden
     :param error: error
