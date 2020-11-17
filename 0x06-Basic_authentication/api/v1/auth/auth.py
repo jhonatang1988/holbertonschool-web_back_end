@@ -21,15 +21,27 @@ class Auth:
         """
         if path is None:
             return True
-        else:
-            if path[-1] != '/':
-                path += '/'
         if not excluded_paths:
             return True
-        if path not in excluded_paths:
-            return True
-        else:
-            return False
+
+        split_exc_paths = []
+
+        for exc_path in excluded_paths:
+            reg_exp = exc_path.split('*', 1)
+            split_exc_paths.append(reg_exp[0])
+
+        for exc_path in split_exc_paths:
+            len_exc_path = len(exc_path)
+            sub_str_path = path[:len_exc_path]
+            if sub_str_path == exc_path:
+                return False
+
+        if path[-1] != '/':
+            path += '/'
+            if path not in excluded_paths:
+                return True
+
+        return False
 
     def authorization_header(self, request=None) -> Union[None, str]:
         """
