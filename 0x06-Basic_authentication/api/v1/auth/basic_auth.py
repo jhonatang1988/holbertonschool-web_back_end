@@ -9,7 +9,7 @@ class BasicAuth(Auth):
     """
     basic authentication
     """
-    
+
     def extract_base64_authorization_header(
             self, authorization_header: str) -> str:
         """
@@ -17,7 +17,7 @@ class BasicAuth(Auth):
         :param authorization_header: auth header
         :return: the base64 encoded string or None
         """
-        if authorization_header:
+        if isinstance(authorization_header, str):
             splitted = authorization_header.split(' ')
             if len(splitted) != 2:
                 return None
