@@ -61,7 +61,7 @@ class BasicAuth(Auth):
         :return: None, None or email and pasword
         """
         if isinstance(decoded_base64_authorization_header, str):
-            splitted = decoded_base64_authorization_header.split(':')
+            splitted = decoded_base64_authorization_header.split(':', 1)
             if len(splitted) != 2:
                 return None, None
             return splitted[0], splitted[1]
