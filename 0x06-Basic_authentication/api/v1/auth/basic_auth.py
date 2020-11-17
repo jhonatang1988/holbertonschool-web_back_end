@@ -3,9 +3,13 @@
 basic authentication for auth
 """
 import binascii
+import json
 
 from api.v1.auth.auth import Auth
 import base64
+from typing import TypeVar
+from models.user import User
+from models.base import Base, DATA
 
 
 class BasicAuth(Auth):
@@ -62,3 +66,24 @@ class BasicAuth(Auth):
                 return None, None
             return splitted[0], splitted[1]
         return None, None
+
+    def user_object_from_credentials(
+            self,
+            user_email: str, user_pwd: str) -> TypeVar('User'):
+        """
+        returns the User instance based on his email and password
+        :param user_email: email
+        :param user_pwd: password
+        :return: None or User instance
+        """
+        if isinstance(user_email, str) and isinstance(user_pwd, str):
+            User.load_from_file()
+            users_with_email = User.search(
+                {'email': user_email})
+
+            if users_with_email:
+                for user in users_with_email:
+                    if user.is_valid_password(pwd=user_pwd):
+                        return user
+
+        return None
