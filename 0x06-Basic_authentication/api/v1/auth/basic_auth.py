@@ -47,3 +47,18 @@ class BasicAuth(Auth):
             return None
         except binascii.Error:
             return None
+
+    def extract_user_credentials(
+            self,
+            decoded_base64_authorization_header: str) -> (str, str):
+        """
+        extract user credentials
+        :param decoded_base64_authorization_header:
+        :return: None, None or email and pasword
+        """
+        if isinstance(decoded_base64_authorization_header, str):
+            splitted = decoded_base64_authorization_header.split(':')
+            if len(splitted) != 2:
+                return None, None
+            return splitted[0], splitted[1]
+        return None, None
