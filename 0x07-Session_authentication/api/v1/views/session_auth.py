@@ -23,8 +23,8 @@ def login() -> Dict[str, str]:
         password = request.form.get('password', None)
         if not password:
             return jsonify({"error": "password missing"}), 400
-        users_with_email: list[Union[User, None]] = User.search({'email':
-                                                                     email})
+        users_with_email: list[Union[User, None]] = \
+            User.search({'email': email})
         if not users_with_email:
             return jsonify({"error": "no user found for this email"}), 404
         if not users_with_email[0].is_valid_password(password):
