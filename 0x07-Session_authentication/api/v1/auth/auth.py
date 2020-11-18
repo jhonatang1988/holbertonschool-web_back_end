@@ -75,5 +75,4 @@ class Auth:
         if request:
             session_name = getenv('SESSION_NAME')
 
-            if session_name == '_my_session_id':
-                return request.cookies.get('_my_session_id', None)
+            return request.cookies.get(session_name, None)
