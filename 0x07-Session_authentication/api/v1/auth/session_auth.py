@@ -5,6 +5,7 @@ Session authentication class
 
 from api.v1.auth.auth import Auth
 import uuid
+from models.user import User
 
 
 class SessionAuth(Auth):
@@ -34,3 +35,20 @@ class SessionAuth(Auth):
         """
         if isinstance(session_id, str):
             return self.user_id_by_session_id.get(session_id, None)
+
+    def current_user(self, request=None):
+        """
+        returns a User instance based on a cookie value
+        :param request: request
+        :return: User instance or None
+        """
+        if request:
+            session_id = self.session_cookie(request)
+            if session_id:
+                user_id = self.user_id_for_session_id(session_id)
+                if user_id:
+                    User.load_from_file()
+                    user = User.get(user_id)
+                    if user:
+                        return user
+        return None
