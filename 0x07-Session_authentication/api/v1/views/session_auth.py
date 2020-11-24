@@ -38,3 +38,20 @@ def login() -> Dict[str, str]:
             response.headers['Content-Type'] = 'application/json'
             response.set_cookie(cookie_name, value=cookie_value)
             return response
+
+
+@app_views.route('auth_session/logout',
+                 methods=['DELETE'],
+                 strict_slashes=False)
+def logout() -> Dict[str, str]:
+    """
+    view to logout
+    :return: if deleted 200 and empty dict, 404 otherwise
+    """
+    from api.v1.app import auth
+    if auth.destroy_session(request):
+        response = make_response({}, 200)
+        response.headers['Content-Type'] = 'application/json'
+        return response
+    else:
+        abort(404)
