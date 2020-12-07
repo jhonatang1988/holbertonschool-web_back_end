@@ -47,6 +47,8 @@ class SessionExpAuth(SessionAuth):
         :return: user_id or None
         """
         if session_id:
+            if self.session_duration <= 0 or not self.session_duration:
+                return self.user_id_by_session_id[session_id]['user_id']
             if session_id in self.user_id_by_session_id:
                 if 'created_at' not in \
                         self.user_id_by_session_id[session_id]:
@@ -59,7 +61,6 @@ class SessionExpAuth(SessionAuth):
                             current:
                         return None
             if session_id in self.user_id_by_session_id:
-                if self.session_duration >= 0:
-                    return self.user_id_by_session_id[session_id]['user_id']
+                return self.user_id_by_session_id[session_id]['user_id']
 
         return None
