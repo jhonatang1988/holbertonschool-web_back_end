@@ -43,7 +43,8 @@ class SessionDBAuth(SessionExpAuth):
                 if hasattr(session, 'created_at'):
                     current = datetime.utcnow()
                     if user_id:
-                        if self.session_duration <= 0 or not self.session_duration:
+                        if self.session_duration <= 0 \
+                                or not self.session_duration:
                             return user_id
                         if (session.created_at + timedelta(
                                 seconds=self.session_duration)) < current:
