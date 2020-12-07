@@ -105,7 +105,7 @@ class BasicAuth(Auth):
                 if encoded_str:
                     decoded_str = self.decode_base64_authorization_header(
                         encoded_str)
-                    print(decoded_str)
+                    # print(decoded_str)
 
                     if decoded_str:
                         user_credentials = self.extract_user_credentials(
