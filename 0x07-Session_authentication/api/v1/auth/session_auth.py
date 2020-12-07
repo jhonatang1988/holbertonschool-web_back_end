@@ -18,7 +18,7 @@ class SessionAuth(Auth):
         """
         creates a Session ID for a user_id
         :param user_id: user's id
-        :return:
+        :return: session id or None
         """
         if isinstance(user_id, str):
             session_id = str(uuid.uuid4())
