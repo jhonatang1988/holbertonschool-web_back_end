@@ -63,9 +63,13 @@ class SessionDBAuth(SessionExpAuth):
             session_id = self.session_cookie(request)
             if session_id:
                 UserSession.load_from_file()
-                user_session = UserSession.get(session_id)
-                if user_session:
-                    user_session.remove()
-                    return True
+                user_session_list = UserSession.search(
+                    {'session_id': session_id})
+
+                if user_session_list:
+                    user_session = user_session_list[0]
+                    if user_session:
+                        user_session.remove()
+                        return True
 
         return False
